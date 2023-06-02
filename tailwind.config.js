@@ -13,7 +13,17 @@ module.exports = {
     extend: {
       colors: {
         primary: colors.blue,
-        secondary: colors.gray,
+        secondary: {
+          100: '#292438',
+          200: '#292438',
+          300: '#292438',
+          400: '#292438',
+          500: '#292438',
+          600: '#292438',
+          700: '#292438',
+          800: '#292438',
+          900: '#292438',
+        },
 
         provider: {
           bitbucket: '#0052CC',
@@ -31,6 +41,7 @@ module.exports = {
           slack: '#4A154B',
           stackoverflow: '#F58025',
           twitter: '#1DA1F2',
+          custompurpe: '#292438',
         },
       },
     },
