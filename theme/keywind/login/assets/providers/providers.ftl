@@ -13,6 +13,7 @@
 <#import "./slack.ftl" as slackIcon>
 <#import "./stackoverflow.ftl" as stackoverflowIcon>
 <#import "./twitter.ftl" as twitterIcon>
+<#import "./apple.ftl" as appleIcon>
 
 <#macro bitbucket>
   <@bitbucketIcon.kw />
@@ -76,4 +77,8 @@
 
 <#macro twitter>
   <@twitterIcon.kw />
+</#macro>
+
+<#macro apple>
+  <@appleIcon.kw />
 </#macro>
