@@ -6,7 +6,7 @@
       </div>
     </#if>
     <#if content?has_content>
-      <div class="space-y-4">
+      <div class="space-y-4 text-white">
         ${content}
       </div>
     </#if>
