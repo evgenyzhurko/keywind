@@ -1,10 +1,10 @@
 <#import "/assets/providers/providers.ftl" as providerIcons>
 
 <#macro kw providers=[]>
-  <div class="pt-4 separate text-secondary-600 text-sm">
+  <div class="pt-4 separate text-secondary-600 text-sm text-white">
     ${msg("identity-provider-login-label")}
   </div>
-  <div class="gap-4 grid grid-flow-col auto-cols-auto">
+  <div class="gap-4 grid grid-flow-col justify-center">
     <#list providers as provider>
       <#switch provider.alias>
         <#case "bitbucket">
@@ -56,20 +56,20 @@
           <#assign colorClass="hover:bg-provider-twitter/10">
           <#break>
         <#case "apple">
-          <#assign colorClass="hover:bg-provider-apple/10">
+          <#assign colorClass="hover:bg-provider-google/10">
           <#break>
         <#default>
           <#assign colorClass="hover:bg-secondary-100">
       </#switch>
 
       <a
-        class="${colorClass} border border-secondary-200 flex justify-center py-2 rounded-lg hover:border-transparent"
+        class="${colorClass} border border-secondary-200 flex rounded-lg hover:border-transparent items-center"
         data-provider="${provider.alias}"
         href="${provider.loginUrl}"
         type="button"
       >
         <#if providerIcons[provider.alias]??>
-          <div class="h-6 w-6">
+          <div>
             <@providerIcons[provider.alias] />
           </div>
         <#else>
